@@ -1,0 +1,54 @@
+/* Contenedor del registro */
+.register-container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.register-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+/* Grupo de formulario */
+.form-group {
+    margin-bottom: 18px;
+}
+
+/* Etiquetas */
+.register-label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Inputs */
+.register-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background: #17a2b8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Errores */
+.error {
+    color: #d9534f;
+    margin-bottom: 12px;
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/search.css' %}">
+{% endblock %}
+{% block content %}
+    <div class="search-page">
+        <h2>Buscar en Rabbit Forum</h2>
+        <form method="get" action="">
+            <input type="text" name="q" placeholder="Buscar..." required>
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+{% endblock %}

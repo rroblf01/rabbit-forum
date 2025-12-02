@@ -1,0 +1,31 @@
+<nav class="navbar">
+    <!-- Inicio Button -->
+    <div>
+        <a href="{% url 'home' %}" class="navbar-inicio">Inicio</a>
+    </div>
+
+    <!-- Search Input -->
+    <div>
+        <form action="{% url 'search' %}" method="get" class="navbar-search-form">
+            <input type="text" name="q" placeholder="Buscar..." class="navbar-search-input">
+            <button type="submit" class="navbar-search-btn">Buscar</button>
+        </form>
+    </div>
+
+    <!-- Login/Register or User Info -->
+    <div>
+        {% if user.is_authenticated %}
+            <span class="navbar-user">Hola {{ user.username }}</span>
+            <form action="{% url 'logout' %}" method="post" class="navbar-logout-form">
+                {% csrf_token %}
+                <button type="submit" class="navbar-logout-btn">Cerrar sesión</button>
+        {% else %}
+            <form action="{% url 'login' %}" method="get" class="navbar-login-form">
+                <button type="submit" class="navbar-login-btn">Iniciar sesión</button>
+            </form>
+            <form action="{% url 'register' %}" method="get" class="navbar-register-form">
+                <button type="submit" class="navbar-register-btn">Registrarse</button>
+            </form>
+        {% endif %}
+    </div>
+</nav>

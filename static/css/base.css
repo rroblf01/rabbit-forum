@@ -1,0 +1,26 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background: #f8f8f8;
+    padding: 1em 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}

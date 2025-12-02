@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+{% endblock %}
+{% block content %}
+	<div class="welcome">
+		<h2>Bienvenido a Rabbit Forum</h2>
+		<p>Este es el foro principal de tu proyecto Django.</p>
+	</div>
+{% endblock %}

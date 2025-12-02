@@ -1,0 +1,74 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background: #f8f9fa;
+}
+
+/* Inicio button */
+.navbar-inicio {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background: #e9ecef;
+}
+
+/* Search form */
+.navbar-search-form {
+    display: flex;
+}
+
+.navbar-search-input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.navbar-search-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 0 4px 4px 0;
+}
+
+/* User info */
+.navbar-user {
+    font-weight: bold;
+}
+
+.navbar-logout-form,
+.navbar-login-form,
+.navbar-register-form {
+    display: inline;
+}
+
+.navbar-logout-btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #dc3545;
+    color: white;
+    border-radius: 4px;
+}
+
+.navbar-login-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #28a745;
+    color: white;
+    border-radius: 4px;
+}
+
+.navbar-register-btn {
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #17a2b8;
+    color: white;
+    border-radius: 4px;
+}
